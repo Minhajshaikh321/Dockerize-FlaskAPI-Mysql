@@ -27,14 +27,9 @@ def database():
 def test():
   return make_response(jsonify({'message': 'test route'}), 200)
 
-@app.route('/api', methods=['GET'])
-def hello():
-   context={"name":"Minhaj","designation":"developer"}
-   return jsonify(context)  
-
 
 # create a user
-@app.route('/users', methods=['POST'])
+@app.route('/user', methods=['POST'])
 def create_user():
   try:
     data = request.get_json()
@@ -55,7 +50,7 @@ def get_users():
     return make_response(jsonify({'message': 'error getting users'}), 500)
 
 # get a user by id
-@app.route('/users/<int:id>', methods=['GET'])
+@app.route('/user/<int:id>', methods=['GET'])
 def get_user(id):
   try:
     user = User.query.filter_by(id=id).first()
@@ -66,7 +61,7 @@ def get_user(id):
     return make_response(jsonify({'message': 'error getting user'}), 500)
 
 # update a user
-@app.route('/users/<int:id>', methods=['PUT'])
+@app.route('/user/<int:id>', methods=['PUT'])
 def update_user(id):
   try:
     user = User.query.filter_by(id=id).first()
@@ -81,7 +76,7 @@ def update_user(id):
     return make_response(jsonify({'message': 'error updating user'}), 500)
 
 # delete a user
-@app.route('/users/<int:id>', methods=['DELETE'])
+@app.route('/user/<int:id>', methods=['DELETE'])
 def delete_user(id):
   try:
     user = User.query.filter_by(id=id).first()

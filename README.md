@@ -15,7 +15,6 @@ Open a terminal, navigate to your project directory, and run the following comma
 
     docker ps      # list the currently running Docker containers
 
-
     docker logs -f [container id] # use to check logs
 
 ```
