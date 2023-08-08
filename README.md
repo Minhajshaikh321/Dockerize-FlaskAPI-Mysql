@@ -1,3 +1,6 @@
+# Dockerize-Flask-API-with-Mysql
+This repository provides a complete setup for quickly creating a Flask-based API and a MySQL database within Docker containers. The Flask API includes customizable endpoints, while the MySQL database handles data storage.
+
 
 Pre-requisites
 --------------
