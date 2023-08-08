@@ -50,7 +50,7 @@ def get_users():
     return make_response(jsonify({'message': 'error getting users'}), 500)
 
 # get a user by id
-@app.route('/user/<int:id>', methods=['GET'])
+@app.route('/users/<int:id>', methods=['GET'])
 def get_user(id):
   try:
     user = User.query.filter_by(id=id).first()

@@ -29,4 +29,5 @@ API response
 
 ![API response](https://github.com/Minhajshaikh321/Dockerize-FlaskAPI-Mysql/assets/105153709/e28d2822-eae6-4fe7-82ac-ccc162b8a54a)
 
+
 *Remember* to customize the database credentials and other configuration options to match your project requirements. Additionally, you might need to adjust the configurations for security and production environments.
