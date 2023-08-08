@@ -6,11 +6,8 @@ This repository provides a complete setup for quickly deploying a Flask-based AP
  # To Run your application
  Open a terminal, navigate to your project directory, and run the following commands:
 
-
- docker-compose build  # Build the Docker images
- 
- docker-compose up     # Start the Docker containers
-
+ docker-compose up --build  #use to build and start the Docker containers defined in a docker-compose.yml 
+ docker ps      # list the currently running Docker containers
  docker logs -f [container id] # use to check logs
 
  
