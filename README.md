@@ -12,5 +12,13 @@ This repository provides a complete setup for quickly creating a Flask-based API
  
  docker logs -f [container id] # use to check logs
 
+Your final output will be like
+![Final Output in Docker UI](https://github.com/Minhajshaikh321/Dockerize-FlaskAPI-with-Mysql/assets/105153709/a85d4922-3444-4665-97d8-c1c5971c01ca)
+
+API response
+![API response](https://github.com/Minhajshaikh321/Dockerize-FlaskAPI-with-Mysql/assets/105153709/b37d322f-3502-4fe8-9487-e3ce16d71690)
+
+
+
  
 *Remember* to customize the database credentials and other configuration options to match your project requirements. Additionally, you might need to adjust the configurations for security and production environments.
