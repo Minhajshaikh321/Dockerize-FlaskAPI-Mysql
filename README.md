@@ -4,7 +4,9 @@ This repository provides a complete setup for quickly deploying a Flask-based AP
  Make sure you have a requirements.txt file containing all the necessary Python packages, including Flask, SQLAlchemy, and mysqlclient for MySQL database connectivity.
 
  # To Run your application
- 
+ Open a terminal, navigate to your project directory, and run the following commands:
+
+
  docker-compose build  # Build the Docker images
  
  docker-compose up     # Start the Docker containers
