@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  flask_app:
+    container_name: todo_app
+    image: francescoxx/flask_live_app:1.0.0
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_URL=mysql://root:root@todo_db:3306/root
+    depends_on:
+      - todo_db
+  todo_db:
+    container_name: todo_db
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+
+    volumes:
+      - mysqldata:/var/lib/mysqlsql/data
+
+volumes:
+  mysqldata: {}
+    
