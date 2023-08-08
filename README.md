@@ -13,10 +13,12 @@ This repository provides a complete setup for quickly creating a Flask-based API
  docker logs -f [container id] # use to check logs
 
 Your final output will be like
+
 ![Docker Desktop](https://github.com/Minhajshaikh321/Dockerize-FlaskAPI-Mysql/assets/105153709/8ac5f40c-2bb8-4010-baeb-85970347d121)
 
 
 API response
+
 ![API response](https://github.com/Minhajshaikh321/Dockerize-FlaskAPI-Mysql/assets/105153709/e28d2822-eae6-4fe7-82ac-ccc162b8a54a)
 
 
